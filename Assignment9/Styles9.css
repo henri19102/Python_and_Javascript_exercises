@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+input{
+    margin: 1%;
+}
+#invalid{
+    color: red;
+}
+button{
+    margin: 1%;
+}

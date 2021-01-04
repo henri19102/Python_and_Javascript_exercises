@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles9.css" />
+  </head>
+
+  <body>
+    <h1>Javascript exercise 9</h1>
+
+    <form>
+      <fieldset>
+        <legend>Texts</legend>
+        <textarea name="textA" cols="10" rows="3">Textarea...</textarea>
+        <input name="text" type="text" autofocus placeholder="Text input" />
+        <input type="email" name="email" placeholder="Email input" />
+        <input type="search" name="search" placeholder="Search input" />
+        <input type="tel" name="tel" placeholder="Tel. input" />
+        <input type="url" name="url" placeholder="URL input" />
+        <input type="number" name="number" placeholder="Number input" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" name="radios" value="Male" /><label for="male">Male</label>
+        <input type="radio" name="radios" value="Female" /><label for="female">Female</label>
+        <input type="radio" name="radios" value="Skip" /><label for="skip">Skip</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your hobbies:</legend>
+        <input type="checkbox" name="checkbox" value="Games" /><label for="games">Games</label>
+        <input type="checkbox" name="checkbox" value="Music" /><label for="music">Music</label>
+        <input type="checkbox" name="checkbox" value="Sport" /><label for="sport">Sport</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Password:</legend>
+        <pre>
+          - The password must have 8...30 characters.
+          - Can only contain the following characters: a-z, A-Z, 0-9 and .,_-.
+          - The passwords must match.
+        </pre>
+        <input
+          type="password"
+          id="pass1"
+          name="pass1"
+          pattern="^[\w,._-]{8,30}$"
+          required
+          placeholder="First password"
+        />
+        <input
+          type="password"
+          id="pass2"
+          name="pass2"
+          pattern="^[\w,._-]{8,30}$"
+          required
+          placeholder="Second password"
+        />
+        <label for="password" id="invalid"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Others:</legend>
+        <input type="color" name="color" />
+        <input type="date" name="date" />
+        <input type="time" name="time" />
+        <input type="range" name="range" />
+
+        <label>Select country:</label>
+        <select name="selects">
+          <optgroup label="Europe">
+            <option value="Finland">Finland</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Norway">Norway</option>
+          </optgroup>
+          <optgroup label="North-America">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>Your inputs:</h1>
+    <pre id="log"></pre>
+
+    <script src="Scripts9.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+* { 
+    overflow: hidden; 
+} 
+body { 
+ text-align: center;
+ 
+} 
+h1 { 
+    text-align: center;
+    color: blue; 
+} 
+
+.c{
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    background-color: beige;
+    border: solid black
+}
+.nap{
+    text-align: center;
+}
